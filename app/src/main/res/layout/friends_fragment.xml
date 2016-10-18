@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11253c">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendsfrag">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:id="@+id/editFriendText"
+                android:layout_alignParentTop="true"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".80"
+                android:text="+ | -"
+                android:id="@+id/addbutton"
+                android:background="#11253d"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center" >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EU PC/PS"
+                android:id="@+id/rbfriendep"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EU Xbox"
+                android:id="@+id/rbfriendex"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="US PC/PS"
+                android:id="@+id/rbfriendup"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="US Xbox"
+                android:id="@+id/rbfriendux"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/friendsList"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:clickable="false" />
+
+</LinearLayout>
